@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <title> Ativdade Form </title>
+    <meta charset="utf-8">
+    </head>
+ 
+    <body background="img/thumb.jpg" text="pink">
+ 
+        <h2 align="center"> <font color="white">  Cadastro Livraria </font> </h2>
+        <h4 align="center"> Cadastro de E-books <font color="white"> </font> </h4>
+ 
+        <table border="0" width="630" align="center" bgcolor="black">
+            <tr><td>
+ 
+        <fieldset>
+            <legend align="center"> <strong> Digite os dados dos Livros  </strong> </legend>
+ 
+            <form action="enviar.php" method="post" name="cadastro"> <!---->
+                <table border="0" cellpadding="5">
+                    <tr>    
+                    <td> <label> Nome do Livro: </label> </td>
+                    <td> <input type="text" id="nome" name="nome" size="30" placeholder="Digite o nome do livro" required/> </td>
+                    </tr>
+ 
+                    <tr>
+                    <td> <label> Nome do Autor(a): </label> </td>
+                    <td> <input type="text" id="nome" name="nome" size="30" placeholder="Digite o nome do autor(a)" required/> </td>
+                    </tr>
+
+                    <tr>
+                    <td> <label> Editora: </label></td>
+                    <td> <input type="" id="editora" nome="editora" size="30" placeholder="Digite de qual editora o livro pertence" > </td>
+                    </tr>
+
+                    <tr>
+                    <td> <label> Quantidade de Paginas: </label></td>
+                    <td> <input type="number" id="qtd_pag" name="qtd_pag" > </td>
+                    </tr>
+
+                    <tr>
+                    <td> <label > Idioma: </label></td>    
+                    <td> <input type="text" id="idioma" name="idioma" placeholder="Digite o idioma do livro"> </td>
+                    </tr>
+    
+                    <tr>
+                    <td> <label> Volume do Livro: </label></td>  
+                    <td> <label> <input type="number" id="estoque" name="estoque" min="1" max="100"/> </label></td>
+                    </tr>
+
+                    <tr>
+                    <td> <label> Estoque: </label></td>
+                    <td> <input type="text" id="estoque" name="estoque" size="26" placeholder="Informe a quantidade de livros" > </td>
+                    </tr>
+
+
+                    <tr>
+                    <td> <label> Preço: </label></td>    
+                    <td> <input type="text" id="preço" nome="preço" size="10" placeholder="informe o preço" required> </td>
+                    </tr>
+
+                    <tr>
+                    <td> <label> Data de lançamento: </label> </td>
+                    <td> <input type="date" id="data_lan" name="data_lan"/> </td>
+                    </tr>
+
+                    <tr>
+                    <td> <label> Classificação Indicativa: </label> </td>
+                    <td> <select id="classificacao_indica" name="classificacao_indica" required>
+                    <option value="" selected="selected" >--Selecione--</option>
+                    <option> Livre </option>
+                    <option> +10 </option>
+                    <option> +12 </option>
+                    <option> +14 </option>
+                    <option> +16 </option>
+                    <option> +18 </option>
+                        </select> </td>
+                     </tr>
+                    </table>
+                    
+                    <fieldset> 
+                        <legend align="center"> <strong> Informações adicionais o sobre livro </strong> </legend>
+                        <table border="0" width="810" align="center" bgcolor="black" cellpadding="5">
+
+                            <tr>
+                            <td> <label> Livro com brinde: </label> </td>
+                            <td> <label> <input type="radio" id="brinde" name="brinde" value="S"  /> Sim </label>  
+                            <label> <input type="radio" id="brinde" name="brinde" value="N"  /> Não </label> </td> 
+                            </tr>
+
+                    <tr>
+                    <td> <label> Sequencia: </label> </td>
+                    <td> <label> <input type="radio" id="Sequencia" name="sequencia" value="S" required /> Sim </label>  
+                    <label> <input type="radio" id="Sequencia" name="sequencia" value="N" required /> Não </label> </td> 
+                    </tr>
+ 
+                    <tr>
+                        <td> <label> Gênero: </label> </td>
+                        <td> <label> <input type="checkbox" id="Suspense" name="Suspense" value="Suspense"/>
+                            Suspense </label>
+                           
+                            <label> <input type="checkbox" id="Drama" name="Drama" value="Drama"/>
+                            Drama </label>
+                           
+                            <label> <input type="checkbox" id="Romanece" name="Romanece" value="Romanece"/>
+                            Romanece </label>
+                           
+                            <label> <input type="checkbox" id="Terror" name="Terror" value="Terror"/>
+                            Terror </label>
+                       
+                            <label> <input type="checkbox" id="ação" name="ação" value="ação"/>
+                            Ação </label>
+                               
+                           <label> <input type="checkbox" id="comedia" name="comedia" value="comedia"/>
+                            Comedia </label>
+ 
+                            <label> <input type="checkbox" id="policial" name="policial" value="policial"/>
+                            Policial </label>
+ 
+                            <label> <input type="checkbox" id="distopia" name="distopia" value="distopia"/>
+                            Distopia </label>
+ 
+                            <label> <input type="checkbox" id="poesia" name="poesia" value="poesia"/>
+                            Poesia</label>
+ 
+                            <label> <input type="checkbox" id="ficção" name="ficção" value="ficcão"/>
+                            Ficção </label>
+ 
+                            <label> <input type="checkbox" id="infantil" name="infantil" value="infantil"/>
+                            Infantil</label>
+ 
+                            <label> <input type="checkbox" id="lgbt" name="lgbt" value="lgbt"/>
+                            Lgbtqia+ </label>
+ 
+                            <label> <input type="checkbox" id="religião" name="religião" value="religião"/>
+                            Religião</label>
+ 
+                            <label> <input type="checkbox" id="biografia" name="biografia" value="biografia"/>
+                            Biografia </label>
+ 
+                            <label> <input type="checkbox" id="autobiografia" name="autobiografia" value="autobiografia"/>
+                            Autobiografia </label>
+ 
+                            <label> <input type="checkbox" id="nacional" name="nacional" value="nacional"/>
+                            Nacional </label>
+ 
+                            <label> <input type="checkbox" id="misterio" id="misterio" value="misterio"/>
+                            Misterio </label>
+ 
+                            <label> <input type="checkbox" id="internacional" id="internacional" value="internacional"/>
+                            Internacional </label>
+ 
+                            <label> <input type="checkbox" id="autoajuda" id="autoajuda" value="autoajuda"/>
+                            Autoajuda  </label>
+ 
+                            <label> <input type="checkbox" id="aventura" name="aventura" value="aventura"/>
+                            Aventura </label>
+ 
+                            <label>   <input type="checkbox" id="hq" name="hq" value="hq"/>
+                            HQ </label>
+
+                            <label> <input type="checkbox" id="Fantasia" name="Fantasia" value="Fantasia"/>
+                            Fantasia</label> </td>
+                            </tr>
+
+                            <tr>
+                            <td> <label> Cor da Capa: </label> </td>    
+                            <td> <input type="color" id="capa" name="capa"></td>
+
+                            </tr>
+
+                            <tr>
+                            <td> <label> Edição: </label> </td>   
+                            <td> <input type="text" id="edição" name="edição" placeholder="Campo desabilitado" disabled> </td>
+                            </tr>
+
+                            <tr>
+                            <td> <label> Sinopse: </label> </td> 
+                            <td><textarea id="sinopse" name="sinopse" cols="40" rows="10" maxlength="240" placeholder="Digite a sinopse do livro:" required> </textarea> </td> 
+                            </tr>
+
+                            <th colspan="2">
+                                <input type="submit" id="enviar" name="enviar" value="ENVIAR DADOS"/>
+                                <input type="reset" id="limpar" name="limpar" value="LIMPAR DADOS"/> 
+                                <br/> <br/>
+                             
+                        </table>
+                    </form>
+                 </fieldset>
+
+                </fieldset>
+                </td> </tr>
+            </table>
+        
+        </body>
+            
+        </html>
+
+                          
